@@ -1,0 +1,47 @@
+@import "vars";
+@import "reset";
+
+body {
+  font-size: 18px;
+  font-family: "Gilroy", "Playfair Display";
+}
+
+h1 {
+  font-family: "Poppins-ExtraBold", sans-serif;
+  font-weight: 800 !important;
+}
+
+h2 {
+  font-family: "Poppins-Bold", sans-serif;
+  font-weight: 700 !important;
+}
+h3 {
+  font-family: "Poppins-SemiBold", sans-serif;
+  font-weight: 600 !important;
+}
+p {
+  font-family: "Poppins-Regular", sans-serif;
+  font-weight: 400 !important;
+}
+
+.container {
+  margin: 0 auto;
+  width: 100% !important;
+  max-width: 1250px !important;
+  padding: 0 15px;
+  &--med {
+    margin: 0 auto;
+    width: 100% !important;
+    max-width: 1570px !important;
+    padding: 0 15px;
+  }
+}
+
+/* Blocks */
+@import "blocks/header";
+@import "blocks/services";
+@import "blocks/location";
+@import "blocks/footer";
+
+/* atom */
+@import "atom/a-btn";

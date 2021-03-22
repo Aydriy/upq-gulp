@@ -1,0 +1,47 @@
+.a-btn {
+  background: #00a031;
+  border-radius: 27px;
+  color: #fff;
+  height: 54px;
+  width: 100%;
+  max-width: 172px;
+  transition: 0.3s;
+  text-align: center;
+  cursor: pointer;
+  border: none;
+  font-family: Gilroy;
+  font-size: 18px;
+  letter-spacing: 0.1px;
+  color: #f4fbf6;
+  &:hover {
+    background-color: #006e21;
+    opacity: 0.8;
+  }
+
+  &.e--transparent {
+    background: none;
+    max-width: 208px;
+    border: 2px solid #00a031;
+    border-radius: 28px;
+    color: #00a031;
+    &:hover {
+      color: #fff;
+      background-color: #00a0305b;
+    }
+  }
+}
+@media (max-width: $xl) {
+  .a-btn {
+    height: 54px;
+    max-width: 152px;
+    font-size: 16px;
+    &.e--transparent {
+      max-width: 190px;
+    }
+  }
+}
+@media (max-width: $md) {
+  .a-btn {
+    font-size: 14px;
+  }
+}

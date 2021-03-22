@@ -1,0 +1,270 @@
+.services {
+  #rec {
+    position: absolute;
+  }
+  .point-line {
+    z-index: -10;
+    position: absolute;
+    display: flex;
+    margin-top: 330px;
+    margin-left: 240px;
+  }
+
+  .circle-inner,
+  .circle-out,
+  .circle-innertelephone {
+    position: absolute;
+  }
+  .circle-inner-background {
+    margin: auto;
+    z-index: -1;
+  }
+  .circle-inner {
+    margin: auto;
+    z-index: 1;
+  }
+  .circle-innertelephone {
+    padding-top: 105px;
+    z-index: 100;
+  }
+
+  .box {
+    max-height: 529px;
+    max-width: 529px;
+    // background-image: url(../images/services/oval.png);
+    // background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: -10;
+    position: relative;
+    img {
+      width: 100%;
+      height: auto;
+    }
+  }
+
+  .circle-inner-background {
+    width: 300px;
+    height: 300px;
+    background: #ffffff;
+    border-radius: 50%;
+  }
+
+  .track {
+    display: flex;
+    align-items: center;
+  }
+  .track-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  @media (max-width: $xl) {
+    .track,
+    .claim {
+      flex-direction: column;
+    }
+    .main {
+      height: 100%;
+      margin-bottom: 190px;
+    }
+    .classify {
+      flex-direction: column-reverse;
+    }
+    .box {
+      margin-bottom: 30px;
+    }
+    .track .box {
+      float: left;
+    }
+  }
+
+  .track-container {
+    display: flex;
+    flex-direction: column;
+    right: auto;
+    h1 {
+      max-width: 600px;
+      font-size: 38px;
+      letter-spacing: 0.4px;
+      color: $greenHaze;
+      margin-bottom: 28px;
+    }
+    p {
+      max-width: 500px;
+      font-size: 16px;
+      line-height: 24px;
+      margin-bottom: 24px;
+      letter-spacing: 0.2px;
+      color: #6c6c6c;
+    }
+  }
+
+  .track-list li {
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.2px;
+    color: #6c6c6c;
+    text-decoration: none;
+    list-style-type: none;
+    margin-left: 28px;
+  }
+  .check,
+  .check-container {
+    position: absolute;
+  }
+  .check-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: -4px;
+  }
+  .check-arrow {
+    padding-bottom: 5px;
+    padding-left: 4px;
+  }
+  .track-button-text {
+    font-family: Gilroy;
+    font-size: 18px;
+    line-height: 21px;
+    text-align: center;
+    color: #00a031;
+  }
+  .track-button {
+    height: 54px;
+    width: 208px;
+    border: 2px solid #00a031;
+    border-radius: 28px;
+    box-sizing: border-box;
+    outline: none;
+    background: #ffffff;
+    cursor: pointer;
+    margin-top: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .arrow {
+    margin-left: 15px;
+  }
+  .track-button:hover {
+    background: #baf59d;
+    transition: 0.3s ease-in-out;
+    border-color: #00a031;
+    box-shadow: inset 0 1px 1px rgba(168, 255, 181, 0.013),
+      0 0 8px rgba(91, 252, 107, 0.5);
+  }
+
+  .classify,
+  .claim {
+    display: flex;
+    align-items: center;
+  }
+  .classify {
+    .track-container {
+      margin-left: 0;
+    }
+  }
+  .transform-telephone {
+    transform: rotate(18deg);
+  }
+  .second-telephoneh2 {
+    width: 500px;
+  }
+  .point-blue {
+    z-index: -100;
+    position: absolute;
+  }
+
+  .blue-line {
+    z-index: -100;
+    padding-top: 84px;
+    padding-left: 84px;
+  }
+
+  .point-blue-animate .test-class .point-line {
+    z-index: -10;
+    position: absolute;
+    display: flex;
+    margin-top: 260px;
+    margin-left: 160px;
+  }
+
+  .line-point-container {
+    position: relative;
+  }
+  .point-blue-animate {
+    z-index: -100;
+  }
+  @media (max-width: $xl) {
+    .point-line {
+      display: none;
+    }
+  }
+  @media (min-width: $xl) {
+    margin-top: 95px;
+    .track-container {
+      margin-left: 83px;
+    }
+    .classify {
+      .track-container {
+        margin-right: 50px;
+      }
+    }
+    .classify,
+    .claim {
+      margin-top: 165px;
+    }
+  }
+  @media (max-width: $xl) {
+    margin-top: 55px;
+    .classify,
+    .claim {
+      margin-top: 50px;
+    }
+    .track-container {
+      margin: 0;
+      h1 {
+        font-size: 38px;
+        margin-bottom: 20px;
+      }
+      p {
+        font-size: 16px;
+        margin-bottom: 20px;
+      }
+    }
+  }
+  @media (max-width: $md) {
+    .track-container {
+      h1 {
+        font-size: 30px;
+      }
+      p {
+        font-size: 14px;
+      }
+    }
+  }
+  @media (max-width: $sm) {
+    .classify,
+    .track,
+    .claim {
+      margin-top: 100px;
+    }
+    .circle-innertelephone {
+      padding-top: 50px;
+      img {
+        max-width: 350px;
+      }
+    }
+    .track-container {
+      h1 {
+        font-size: 25px;
+      }
+      p {
+        font-size: 12px;
+      }
+    }
+  }
+}
